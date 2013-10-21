@@ -1,0 +1,20 @@
+digraph myPERT {
+s[shape=polygon, sides=4, style="bold", color="red", label="start (0 day)"]
+
+n1[shape=polygon, sides=4, style="bold", color="red", label="task1 (4 days)"]
+n2[shape=polygon, sides=4, label="task2 (3 days)"]
+n3[shape=polygon, sides=4, style="bold", color="red", label="task3 (2 days)"]
+n4[shape=polygon, sides=4, label="task4 (1 day)"]
+
+e[shape=polygon, sides=4, color="red", style="bold", label="finalTask (3 days)"]
+
+s -> n1[label="", style="bold", color="red"]
+s -> n2[label=""]
+
+n1 -> n3[label="", style="bold", color="red"]
+n1 -> n4[label=""]
+n2 -> n3[label=""]
+
+n3 -> e[label="",style="bold", color="red"]
+n4 -> e[label=""]
+} 
