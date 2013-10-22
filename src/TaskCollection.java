@@ -35,12 +35,17 @@ public class TaskCollection
 	{
 		return tasks;
 	}
+
+	public Task getTaskByID(int id) {
+		
+		for (Task task : this.tasks) {
+			if (task.getID() == id)
+				return task;
+		}
+		return null;
+	}
 	
-	//public void setTasks( List tasks )
-//	{
-//		
-//	}
-	
+
 	
 
 }
